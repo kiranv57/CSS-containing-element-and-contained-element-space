@@ -5,7 +5,7 @@
   box-sizing:border-box;
 }
 .containing-element {
-  display: grid;
+  display: grid; 
   background-color:crimson;
   grid-template-rows: repeat(10, min-content); /* Adjust row height as needed */
   gap:20px;
