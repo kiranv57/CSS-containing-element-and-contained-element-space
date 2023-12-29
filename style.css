@@ -1,0 +1,31 @@
+*{
+  /*CSS reset i.e. reset margin and padding of all(*) elements */
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.containing-element {
+  display: grid;
+  background-color:crimson;
+  grid-template-rows: repeat(10, min-content); /* Adjust row height as needed */
+  gap:20px;
+  place-items: center; /* Center both horizontally and vertically */
+  height: 100vh; /* 100% of the viewport height */
+  overflow:scroll;
+  }
+
+
+  .contained-element {
+  width:200px;
+  height:100px;
+  background-color: #3498db;
+  box-sizing:border-box;
+  }
+
+  p{
+  background-color: yellow;
+  overflow:scroll;
+  /*setting min height to 100% will make contained element 
+  take up full space of containing element*/
+  min-height:100%; 
+}
